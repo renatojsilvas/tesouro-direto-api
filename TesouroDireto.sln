@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{869A1C92-FB4C-4FC5-944C-8F63F2979762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesouroDireto.Api", "src\TesouroDireto.Api\TesouroDireto.Api.csproj", "{ADBAA278-4A8A-4E44-B1F7-D0DF0668EAF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E6AD6C0D-8C94-49F4-AD4A-C9AFE639B059}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ADBAA278-4A8A-4E44-B1F7-D0DF0668EAF3} = {869A1C92-FB4C-4FC5-944C-8F63F2979762}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADBAA278-4A8A-4E44-B1F7-D0DF0668EAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADBAA278-4A8A-4E44-B1F7-D0DF0668EAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADBAA278-4A8A-4E44-B1F7-D0DF0668EAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADBAA278-4A8A-4E44-B1F7-D0DF0668EAF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
