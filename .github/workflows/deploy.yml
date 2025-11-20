@@ -56,8 +56,8 @@ jobs:
           ASPNETCORE_URLS=http://+:8080
           EOF
           
-          docker-compose down --timeout 30
+          docker compose down --timeout 30
           docker system prune -f --volumes
-          docker-compose up --build -d --remove-orphans
+          docker compose up --build -d --remove-orphans
           
           echo "Deploy completed!"
