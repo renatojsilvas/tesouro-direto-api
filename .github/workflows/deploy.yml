@@ -39,17 +39,12 @@ jobs:
         username: ${{ secrets.DO_USERNAME }}
         key: ${{ secrets.DO_SSH_KEY }}
         script: |
-          # Create /app directory if not exists
-          sudo mkdir -p /app
-          sudo chown $USER:$USER /app
-          
           # Clone repo if first time, otherwise pull
-          if [ ! -d "/app/tesouro-direto-api" ]; then
-            cd /app
-            git clone ${{ github.server_url }}/${{ github.repository }}.git tesouro-direto-api
+          if [ ! -d "~/tesouro-direto-api" ]; then
+            git clone ${{ github.server_url }}/${{ github.repository }}.git ~/tesouro-direto-api
           fi
           
-          cd /app/tesouro-direto-api
+          cd ~/tesouro-direto-api
           git fetch origin
           git reset --hard origin/main
           
